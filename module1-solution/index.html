@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css" >
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
   </head>
-<body>
-   <div class="container">
+<body ng-app="LunchCheck">
+   <div class="container" ng-controller="LunchController">
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
              <input id="lunch-menu" type="text"
-             placeholder="list comma separated items you usually have for lunch"
+             placeholder="{{instruction}}"
              class="form-control">
          </div>
          <div class="form-group">
