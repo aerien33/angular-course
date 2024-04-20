@@ -6,7 +6,7 @@ angular.module('LunchCheck', [])
 
 LunchController.$inject = ['$scope'];
 function LunchController($scope) {
-    $scope.instruction = "List comma separated items that you usually have for lunch";
+    $scope.instruction = "List comma separated dishes that you usually have for lunch";
     $scope.ingredients = "";
     $scope.message = "";
 
